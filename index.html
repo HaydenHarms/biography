@@ -229,7 +229,6 @@
     margin-bottom: 24px;
   }
 
-  /* NO UNDERLINE ON RIGHT SIDE HEADINGS */
   .markdown-content h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 26px;
@@ -241,6 +240,15 @@
     border-bottom: none;
   }
 
+  .markdown-content h2 a {
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .markdown-content h2 a:hover {
+    color: var(--gold);
+  }
+
   .markdown-content p {
     font-family: 'Jost', sans-serif;
     font-size: 15px;
@@ -248,45 +256,6 @@
     color: var(--sub);
     line-height: 1.8;
     margin-bottom: 16px;
-  }
-
-  /* Compressed Experience Items */
-  .exp-block {
-    margin-bottom: 22px;
-  }
-
-  .exp-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 8px;
-  }
-
-  .exp-role {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 21px;
-    font-weight: 600;
-    color: var(--ink);
-    line-height: 1.2;
-  }
-
-  .exp-meta {
-    font-family: 'Jost', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: var(--gold);
-    font-weight: 400;
-    margin-top: 2px;
-    text-transform: uppercase;
-  }
-
-  .exp-date {
-    font-family: 'Jost', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    white-space: nowrap;
-    font-weight: 400;
   }
 
   /* Bullet Lists */
@@ -410,55 +379,14 @@
 
     <p>He believes accounting plays a broader role in civil life than most people acknowledge. Outside the office he writes about politics, trade, and culture — and he is actively seeking a public accounting internship for next cycle.</p>
 
-    <!-- EXPERIENCE SECTION -->
-    <h2>Experience</h2>
-
-    <div class="exp-block">
-      <div class="exp-head">
-        <div class="exp-role">Accounting Intern</div>
-        <div class="exp-date">Jun 2025–Present</div>
-      </div>
-      <div class="exp-meta">Airbus Helicopters</div>
-      <ul>
-        <li>Built an Excel macro that automated manual transaction sorting from Bank of America reports, cutting processing time by ~70%. Processes roughly 100 invoices per week as the primary AR intern at a Fortune 500 headquarters, working directly under an account specialist with SAP and Bank of America systems.</li>
-      </ul>
-    </div>
-
-    <div class="exp-block">
-      <div class="exp-head">
-        <div class="exp-role">Treasurer</div>
-        <div class="exp-date">May 2025–Present</div>
-      </div>
-      <div class="exp-meta">Tau Alpha Phi · Dallas Baptist University</div>
-      <ul>
-        <li>Elected by 40 members to oversee a ~$24,000 annual budget — managing vendor payments, dues collection, and all business communications with the DBU business office.</li>
-      </ul>
-    </div>
-
-    <div class="exp-block">
-      <div class="exp-head">
-        <div class="exp-role">Architecture Intern</div>
-        <div class="exp-date">Sep 2022–May 2023</div>
-      </div>
-      <div class="exp-meta">Charles R Lynch AIA</div>
-      <ul>
-        <li>Presented a year-end project with ~$5M in estimated material value to a class of interns. Gained client-facing experience and hands-on Revit training at a licensed architecture firm.</li>
-      </ul>
-    </div>
-
-    <!-- EDUCATION SECTION -->
-    <h2>Education</h2>
-
-    <div class="exp-block">
-      <div class="exp-head">
-        <div class="exp-role">Bachelor of Business Administration — Accounting</div>
-        <div class="exp-date">2023–2027</div>
-      </div>
-      <div class="exp-meta">Dallas Baptist University · Carter School of Business</div>
-      <ul>
-        <li>Cumulative GPA: 3.76 · Major GPA: 3.78. Building a rigorous technical foundation in financial accounting, taxation, and business law with goals for CPA licensure.</li>
-      </ul>
-    </div>
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <h2><a href="https://haydenharms.com/experience/index.html">Experience & Education</a></h2>
+    <ul>
+      <li><a href="https://haydenharms.com/experience/index.html#airbus">Accounting Intern — Airbus Helicopters</a></li>
+      <li><a href="https://haydenharms.com/experience/index.html#tau-alpha-phi">Treasurer — Tau Alpha Phi</a></li>
+      <li><a href="https://haydenharms.com/experience/index.html#architecture">Architecture Intern — Charles R Lynch AIA</a></li>
+      <li><a href="https://haydenharms.com/experience/index.html#education">B.B.A. in Accounting — Dallas Baptist University</a></li>
+    </ul>
 
     <!-- WRITING -->
     <h2>Writing</h2>
