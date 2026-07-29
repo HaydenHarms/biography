@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience & Education — Hayden Harms</title>
+<meta name="description" content="Experience and background of Hayden Harms." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg:       #f5f0e8;
+    --ink:      #2c2416;
+    --sub:      #5a5048;
+    --accent:   #6b5c3e;
+    --muted:    #a0917a;
+    --rule-lt:  #e0d8c8;
+    --gold:     #b8972a;
+  }
+
+  /* ── DARK MODE ── */
+  html.dark {
+    --bg:      #14100a;
+    --ink:     #e8dcc8;
+    --sub:     #9e8e75;
+    --accent:  #c0aa88;
+    --muted:   #6b5c3e;
+    --rule-lt: #2a2015;
+    --gold:    #c8a84a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+
+  /* ── SITE HEADER ── */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--rule-lt);
+  }
+
+  .site-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .site-title:hover {
+    color: var(--gold);
+  }
+
+  .dm-toggle-btn {
+    background: transparent;
+    border: 1px solid var(--rule-lt);
+    color: var(--accent);
+    padding: 6px 12px;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .dm-toggle-btn:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+
+  /* ── HEADINGS ── */
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 30px;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+
+  /* ── EXPERIENCE BLOCKS ── */
+  .exp-block {
+    margin-bottom: 30px;
+    scroll-margin-top: 40px;
+  }
+
+  .exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .exp-role {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .exp-meta {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    font-weight: 400;
+    margin-top: 2px;
+    text-transform: uppercase;
+  }
+
+  .exp-date {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    white-space: nowrap;
+    font-weight: 400;
+  }
+
+  ul {
+    margin-top: 8px;
+    padding-left: 20px;
+  }
+
+  li {
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--sub);
+    line-height: 1.75;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <a href="https://haydenharms.com" class="site-title">Hayden Harms</a>
+    <button class="dm-toggle-btn" onclick="toggleDark()" aria-label="Toggle dark mode">Theme ☀︎</button>
+  </header>
+
+  <main>
+    <h1>Experience & Education</h1>
+
+    <h2>Experience</h2>
+
+    <div class="exp-block" id="airbus">
+      <div class="exp-head">
+        <div class="exp-role">Accounting Intern</div>
+        <div class="exp-date">Jun 2025–Present</div>
+      </div>
+      <div class="exp-meta">Airbus Helicopters</div>
+      <ul>
+        <li>Built an Excel macro that automated manual transaction sorting from Bank of America reports, cutting processing time by ~70%. Processes roughly 100 invoices per week as the primary AR intern at a Fortune 500 headquarters, working directly under an account specialist with SAP and Bank of America systems.</li>
+      </ul>
+    </div>
+
+    <div class="exp-block" id="tau-alpha-phi">
+      <div class="exp-head">
+        <div class="exp-role">Treasurer</div>
+        <div class="exp-date">May 2025–Present</div>
+      </div>
+      <div class="exp-meta">Tau Alpha Phi · Dallas Baptist University</div>
+      <ul>
+        <li>Elected by 40 members to oversee a ~$24,000 annual budget — managing vendor payments, dues collection, and all business communications with the DBU business office.</li>
+      </ul>
+    </div>
+
+    <div class="exp-block" id="architecture">
+      <div class="exp-head">
+        <div class="exp-role">Architecture Intern</div>
+        <div class="exp-date">Sep 2022–May 2023</div>
+      </div>
+      <div class="exp-meta">Charles R Lynch AIA</div>
+      <ul>
+        <li>Presented a year-end project with ~$5M in estimated material value to a class of interns. Gained client-facing experience and hands-on Revit training at a licensed architecture firm.</li>
+      </ul>
+    </div>
+
+    <h2 id="education">Education</h2>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <div class="exp-role">Bachelor of Business Administration — Accounting</div>
+        <div class="exp-date">2023–2027</div>
+      </div>
+      <div class="exp-meta">Dallas Baptist University · Carter School of Business</div>
+      <ul>
+        <li>Cumulative GPA: 3.76 · Major GPA: 3.78. Building a rigorous technical foundation in financial accounting, taxation, and business law with goals for CPA licensure.</li>
+      </ul>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  function toggleDark() {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+</body>
+</html>
