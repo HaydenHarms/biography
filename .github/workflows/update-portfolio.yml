@@ -121,8 +121,8 @@ jobs:
 
           holdings_block = 'var holdings = [\n' + ',\n'.join(holdings_js) + '\n];'
 
-          # Read portfolio.html
-          with open('portfolio.html', 'r') as f:
+          # Read portfolio/index.html
+          with open('portfolio/index.html', 'r') as f:
             content = f.read()
 
           # Replace holdings array
@@ -147,7 +147,7 @@ jobs:
             content
           )
 
-          with open('portfolio.html', 'w') as f:
+          with open('portfolio/index.html', 'w') as f:
             f.write(content)
 
           print(f'Portfolio updated. Total value: ${total_mkt:,.2f} ({total_gain_str} since inception)')
@@ -157,6 +157,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add portfolio.html
+          git add portfolio/index.html
           git diff --staged --quiet || git commit -m "Auto-update portfolio prices $(date +'%Y-%m-%d')"
           git push
