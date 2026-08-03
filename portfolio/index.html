@@ -332,7 +332,7 @@
 
   <main>
     <h1>Portfolio</h1>
-    <p class="subtitle">Roth IRA + Individual · Combined · As of July 31, 2026</p>
+    <p class="subtitle">Roth IRA + Individual · Combined · As of August 03, 2026</p>
 
     <!-- GAIN BANNER -->
     <div class="gain-banner">
@@ -386,14 +386,14 @@ if (localStorage.getItem('theme') === 'dark') {
 
 // Holdings data (overwritten dynamically by GitHub Actions workflow script)
 var holdings = [
-  { ticker: 'VT', name: 'Vanguard Total World Stock ETF', mktVal: 10214.97, sincePct: 10.6, color: '#2c2416', domPct: 0.58, intlPct: 0.42 },
-  { ticker: 'VOO', name: 'Vanguard S&P 500 ETF', mktVal: 7608.22, sincePct: 14.7, color: '#b8972a', domPct: 1.0, intlPct: 0.0 },
-  { ticker: 'VB', name: 'Vanguard Small-Cap ETF', mktVal: 2085.67, sincePct: 22.6, color: '#6b5c3e', domPct: 1.0, intlPct: 0.0 },
-  { ticker: 'VXUS', name: 'Vanguard Total International Stock', mktVal: 1296.53, sincePct: 15.9, color: '#a0917a', domPct: 0.0, intlPct: 1.0 },
-  { ticker: 'IAU', name: 'iShares Gold Trust', mktVal: 609.36, sincePct: -1.0, color: '#c0aa88', domPct: 0.0, intlPct: 0.0 },
-  { ticker: 'IBIT', name: 'iShares Bitcoin Trust ETF', mktVal: 106.92, sincePct: -46.3, color: '#5a5048', domPct: 0.0, intlPct: 0.0 },
-  { ticker: 'MP', name: 'MP Materials Corp.', mktVal: 289.59, sincePct: -11.3, color: '#3a6b4a', domPct: 1.0, intlPct: 0.0 },
-  { ticker: 'SPCX', name: 'Space Exploration Technologies Corp.', mktVal: 216.74, sincePct: -19.3, color: '#1f3a52', domPct: 1.0, intlPct: 0.0 }
+  { ticker: 'VT', name: 'Vanguard Total World Stock ETF', mktVal: 10329.66, sincePct: 11.9, color: '#2c2416', domPct: 0.58, intlPct: 0.42 },
+  { ticker: 'VOO', name: 'Vanguard S&P 500 ETF', mktVal: 7716.25, sincePct: 16.3, color: '#b8972a', domPct: 1.0, intlPct: 0.0 },
+  { ticker: 'VB', name: 'Vanguard Small-Cap ETF', mktVal: 2117.47, sincePct: 24.4, color: '#6b5c3e', domPct: 1.0, intlPct: 0.0 },
+  { ticker: 'VXUS', name: 'Vanguard Total International Stock', mktVal: 1303.12, sincePct: 16.5, color: '#a0917a', domPct: 0.0, intlPct: 1.0 },
+  { ticker: 'IAU', name: 'iShares Gold Trust', mktVal: 609.52, sincePct: -1.0, color: '#c0aa88', domPct: 0.0, intlPct: 0.0 },
+  { ticker: 'IBIT', name: 'iShares Bitcoin Trust ETF', mktVal: 108.48, sincePct: -45.5, color: '#5a5048', domPct: 0.0, intlPct: 0.0 },
+  { ticker: 'MP', name: 'MP Materials Corp.', mktVal: 306.88, sincePct: -6.0, color: '#3a6b4a', domPct: 1.0, intlPct: 0.0 },
+  { ticker: 'SPCX', name: 'Space Exploration Technologies Corp.', mktVal: 229.06, sincePct: -14.7, color: '#1f3a52', domPct: 1.0, intlPct: 0.0 }
 ];
 
 const portfolioTotal = holdings.reduce(function(s, h) { return s + h.mktVal; }, 0);
